@@ -1,6 +1,6 @@
 const path = require("path");
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const mnemonic='syrup bird produce garment slush obvious crop subway clutch fiction finish balance';
+const mnemonic='';
 
 
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
      network_id: "*",       // Any network (default: none)
     },
     ropsten: {
-    provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/294ba86a2f504ea0947006554734c90b`),
+    provider: () => new HDWalletProvider(mnemonic, ``),
     network_id: 3,       // Ropsten's id
     gas: 5500000,        // Ropsten has a lower block limit than mainnet
     confirmations: 2,    // # of confs to wait between deployments. (default: 0)
@@ -23,7 +23,7 @@ module.exports = {
     skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     },
     rinkeby: {
-      provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/294ba86a2f504ea0947006554734c90b`),
+      provider: () => new HDWalletProvider(mnemonic, ``),
       network_id: 4,       // Ruinkeby's id
       gas: 5500000,        // Ropsten has a lower block limit than mainnet
       confirmations: 2,    // # of confs to wait between deployments. (default: 0)
